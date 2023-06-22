@@ -7,11 +7,12 @@ st.set_page_config(layout='wide', page_title='FortuneForecaster - Simulador de P
                    menu_items={'Get Help': None, 'Report a bug': None, 'About': None})
 st.set_option('deprecation.showPyplotGlobalUse', False)
 
-st.title('🔮 FortuneForecaster')
-st.header('Simulador de Probabilidade de Retorno')
-st.subheader('Calcula a probabilidade de retorno de um ativo ser maior ou igual ao esperado, usando simulações de Monte Carlo a partir do Movimento Geométrico Browniano')
-
 def main():
+    st.title('FortuneForecaster')
+    st.header('Simulador de Probabilidade de Retorno')
+    st.subheader(
+        'Calcula a probabilidade de retorno de um ativo ser maior ou igual ao esperado, usando simulações de Monte Carlo a partir do Movimento Geométrico Browniano')
+
     with st.form(key='ativo_ticker'):
         coluna1, coluna2, coluna3, coluna4, coluna5 = st.columns(5)
         ticker = coluna1.text_input('Digite o ticker do ativo:', value='MGLU3.SA')
@@ -41,6 +42,7 @@ def main():
         about = f.read()
 
     with st.sidebar:
+        st.image('logo.png', width=200)
         st.markdown(about)
 
 ft = """
