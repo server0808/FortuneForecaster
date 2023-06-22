@@ -1,35 +1,9 @@
 # FortuneForecaster
-Desenvolvido por [Matheus C. Pestana (FGV/ECMI)](https://www.linkedin.com/in/matheus-pestana/)
+Desenvolvido por [Matheus C. Pestana](https://www.linkedin.com/in/matheus-pestana/)
 
 ## Descrição
 O FortuneForecaster é um projeto de um sistema de previsão de preços de ativos, baseando-se no GBM (*Geometric Brownian Motion*) e em simulações de Monte Carlo. 
 O projeto é todo realizado em Streamlit, usando majoritariamente as bibliotecas Pandas, Numpy e Altair.
-
-## Como usar
-Para usar o FortuneForecaster, basta:
-
-- Clonar o repositório
-```
-git clone https://github.com/mateuspestana/FortuneForecaster
-```
-
-- Instalar os requerimentos:
-```
-pip install -r requirements.txt
-```
-
-- Rodar o seguinte comando no terminal:
-```
-streamlit run app.py
-```
-
-O sistema irá abrir uma aba no navegador com a aplicação rodando.
-
-## Futuras implementações
-- [ ] Implementar outros algoritmos, como o Prophet
-- [ ] Implementar um sistema de comparação de ativos
-- [ ] Implementar um sistema de comparação de algoritmos
-
 
 ## Como funciona
 O *Geometric Brownian Motion* (GBM) e as simulações de Monte Carlo são métodos usados ​​extensivamente na modelagem financeira, particularmente na precificação de derivativos, como opções. A relação entre os dois é que as simulações de Monte Carlo são frequentemente usadas para gerar caminhos da Geometric Brownian Motion.
