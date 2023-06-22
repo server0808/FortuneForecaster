@@ -13,13 +13,13 @@ st.subheader('Calcula a probabilidade de retorno de um ativo ser maior ou igual 
 
 def main():
     with st.form(key='ativo_ticker'):
-        coluna1, coluna2, coluna3 = st.columns(3)
+        coluna1, coluna2, coluna3, coluna4, coluna5 = st.columns(5)
         ticker = coluna1.text_input('Digite o ticker do ativo:', value='MGLU3.SA')
         st.caption('Para o ticker, usar o formato do YahooFinance. Exemplo: PETR4.SA, VALE3.SA, ITUB4.SA, etc.')
         periodo = coluna2.selectbox('Considerar dados dos últimos:', options=periodos_dictionary.keys(), index=5)
         previsao = coluna3.number_input('Prever o preço daqui a quantos dias?', min_value=5, max_value=365, value=30)
-        iteracoes = coluna1.number_input('Quantas iterações?', min_value=1000, max_value=1000000, value=10000)
-        retorno = coluna2.number_input('Qual o retorno esperado, em %?', min_value=0.5, max_value=99.5, value=5.0, step=0.5)
+        iteracoes = coluna4.number_input('Quantas iterações?', min_value=1000, max_value=1000000, value=10000)
+        retorno = coluna5.number_input('Qual o retorno esperado, em %?', min_value=0.5, max_value=99.5, value=5.0, step=0.5)
         analisar = st.form_submit_button('Analisar')
 
     if analisar:
