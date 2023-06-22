@@ -1,0 +1,13 @@
+altair==5.0.1
+beautifulsoup4==4.12.2
+lxml==4.9.2
+matplotlib==3.7.1
+numpy==1.25.0
+pandas==2.0.2
+requests==2.31.0
+stqdm==0.0.5
+streamlit==1.23.1
+tqdm==4.65.0
+urllib3==2.0.3
+watchdog==3.0.0
+yfinance==0.2.20
